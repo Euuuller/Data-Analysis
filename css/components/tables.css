@@ -1,0 +1,49 @@
+/* ================================
+   TABLES COMPONENT
+   ================================ */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-medium);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-family-mono);
+}
+
+.data-table th {
+    font-family: var(--font-family-sans);
+    background: var(--bg-tertiary);
+    padding: 16px;
+    text-align: left;
+    font-size: var(--font-size-caption);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-tertiary);
+    border-bottom: 1px solid var(--border-medium);
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: var(--font-size-body-sm);
+    color: var(--text-secondary);
+}
+
+.data-table tr:hover {
+    background: var(--bg-tertiary);
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.numeric {
+    text-align: right;
+    font-family: var(--font-family-mono);
+}

@@ -1,0 +1,46 @@
+/* ================================
+   TYPOGRAPHY
+   ================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+h1 {
+    font-size: var(--font-size-display);
+    font-weight: var(--font-weight-display);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
+}
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+.display-title {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: var(--space-xs);
+}
+
+.last-update {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-caption);
+    color: var(--text-disabled);
+}

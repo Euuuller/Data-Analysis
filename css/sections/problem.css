@@ -1,0 +1,46 @@
+/* ================================
+   SECTION: PROBLEM STATEMENT
+   ================================ */
+.problem-header {
+    background: var(--bg-secondary);
+    padding: var(--space-xl);
+    border-radius: 12px;
+    border: 1px solid var(--border-medium);
+    margin-bottom: var(--space-xl);
+    border-left: 4px solid var(--data-magenta);
+}
+
+.problem-context p {
+    font-size: var(--font-size-body-lg);
+    max-width: 800px;
+    color: var(--text-secondary);
+}
+
+.callout-box {
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    padding: var(--space-lg);
+    border-radius: 8px;
+    margin-top: var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.symptom-list li,
+.impact-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: var(--font-size-body);
+}
+
+.icon-check {
+    color: var(--error);
+    font-weight: bold;
+}
+
+.icon-money {
+    color: var(--data-lime);
+}

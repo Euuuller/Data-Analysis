@@ -1,0 +1,119 @@
+{
+  "cohorts": [
+    {
+      "id": "2024-01",
+      "name": "Janeiro 2024",
+      "startDate": "2024-01-01",
+      "size": 1250,
+      "retention": {
+        "week0": 100,
+        "week1": 68,
+        "week4": 52,
+        "week8": 45,
+        "week12": 42,
+        "week16": 40
+      },
+      "revenue": {
+        "total": 850000,
+        "average": 680
+      }
+    },
+    {
+      "id": "2023-12",
+      "name": "Dezembro 2023",
+      "startDate": "2023-12-01",
+      "size": 1180,
+      "retention": {
+        "week0": 100,
+        "week1": 72,
+        "week4": 58,
+        "week8": 50,
+        "week12": 48,
+        "week16": 46
+      },
+      "revenue": {
+        "total": 920000,
+        "average": 780
+      }
+    },
+    {
+      "id": "2023-11",
+      "name": "Novembro 2023",
+      "startDate": "2023-11-01",
+      "size": 1320,
+      "retention": {
+        "week0": 100,
+        "week1": 65,
+        "week4": 48,
+        "week8": 40,
+        "week12": 38,
+        "week16": 35
+      },
+      "revenue": {
+        "total": 780000,
+        "average": 590
+      }
+    },
+    {
+      "id": "2023-10",
+      "name": "Outubro 2023",
+      "startDate": "2023-10-01",
+      "size": 1420,
+      "retention": {
+        "week0": 100,
+        "week1": 75,
+        "week4": 62,
+        "week8": 55,
+        "week12": 52,
+        "week16": 50
+      },
+      "revenue": {
+        "total": 1050000,
+        "average": 739
+      }
+    },
+    {
+      "id": "2023-09",
+      "name": "Setembro 2023",
+      "startDate": "2023-09-01",
+      "size": 1150,
+      "retention": {
+        "week0": 100,
+        "week1": 62,
+        "week4": 45,
+        "week8": 38,
+        "week12": 35,
+        "week16": 32
+      },
+      "revenue": {
+        "total": 680000,
+        "average": 591
+      }
+    },
+    {
+      "id": "2023-08",
+      "name": "Agosto 2023",
+      "startDate": "2023-08-01",
+      "size": 1280,
+      "retention": {
+        "week0": 100,
+        "week1": 70,
+        "week4": 55,
+        "week8": 48,
+        "week12": 45,
+        "week16": 43
+      },
+      "revenue": {
+        "total": 890000,
+        "average": 695
+      }
+    }
+  ],
+  "summary": {
+    "totalCohorts": 6,
+    "totalCustomers": 7600,
+    "averageRetentionWeek12": 43.3,
+    "bestCohort": "2023-10",
+    "worstCohort": "2023-09"
+  }
+}

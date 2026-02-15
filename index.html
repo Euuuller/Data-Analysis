@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard profissional para análise de retenção, cohort e segmentação RFM">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dashboard Analytics - Análise de Cohort e RFM">
+    <meta property="og:description" content="Análise profissional de dados de negócios">
+    <meta property="og:type" content="website">
+
+    <title>Dashboard Analytics - Análise de Cohort e RFM</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navegação principal">
+            <div class="sidebar-header">
+                <h2 class="sidebar-logo">Dashboard Analytics</h2>
+                <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Alternar menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#/" class="nav-link active" data-route="/">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">Apresentação</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/problem" class="nav-link" data-route="/problem">
+                            <span class="nav-icon">🎯</span>
+                            <span class="nav-text">Problema de Negócio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/cohort" class="nav-link" data-route="/cohort">
+                            <span class="nav-icon">📈</span>
+                            <span class="nav-text">Análise de Cohort</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/rfm" class="nav-link" data-route="/rfm">
+                            <span class="nav-icon">🎲</span>
+                            <span class="nav-text">Segmentação RFM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/descriptive-a" class="nav-link" data-route="/descriptive-a">
+                            <span class="nav-icon">📉</span>
+                            <span class="nav-text">Análise Descritiva A</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/descriptive-b" class="nav-link" data-route="/descriptive-b">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">Análise Descritiva B</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p class="sidebar-version">v1.0.0</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <!-- Header -->
+            <header class="header" role="banner">
+                <div class="header-content">
+                    <div class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb">
+                        <span class="breadcrumb-item">Dashboard</span>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-item current" id="current-section">Apresentação</span>
+                    </div>
+
+                    <div class="header-actions">
+                        <button class="btn-icon" id="theme-toggle" aria-label="Alternar tema">
+                            <span>🌙</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Content Container -->
+            <div class="content-container" id="main-content" role="main">
+                <!-- Content will be dynamically loaded here -->
+                <div class="loader-container">
+                    <div class="spinner"></div>
+                    <p>Carregando...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- Application Entry Point -->
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>

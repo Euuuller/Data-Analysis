@@ -1,0 +1,129 @@
+/* Responsive Utilities and Media Queries */
+
+/* Mobile First Breakpoints */
+:root {
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+}
+
+/* Mobile Styles (< 640px) */
+@media (max-width: 640px) {
+    .content-container {
+        padding: var(--spacing-4);
+    }
+
+    .grid {
+        gap: var(--spacing-4);
+    }
+
+    .metric-value {
+        font-size: var(--font-size-2xl);
+    }
+
+    h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+/* Tablet Styles (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .sidebar {
+        width: 240px;
+    }
+
+    .content-container {
+        padding: var(--spacing-5);
+    }
+}
+
+/* Desktop Styles (> 1024px) */
+@media (min-width: 1025px) {
+    .content-container {
+        max-width: var(--max-content-width);
+        margin: 0 auto;
+    }
+}
+
+/* Large Desktop (> 1280px) */
+@media (min-width: 1281px) {
+    .grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Display Utilities */
+.hide-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+}
+
+/* Responsive Text Alignment */
+@media (max-width: 640px) {
+    .text-center-mobile {
+        text-align: center;
+    }
+}
+
+/* Responsive Spacing */
+@media (max-width: 640px) {
+    .p-mobile-sm {
+        padding: var(--spacing-2);
+    }
+
+    .m-mobile-sm {
+        margin: var(--spacing-2);
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .sidebar,
+    .header,
+    .btn,
+    .no-print {
+        display: none !important;
+    }
+
+    .main-wrapper {
+        margin: 0;
+    }
+
+    .content-container {
+        padding: 0;
+    }
+
+    .card,
+    .chart-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

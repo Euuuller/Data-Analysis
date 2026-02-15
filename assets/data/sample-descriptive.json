@@ -1,0 +1,207 @@
+{
+    "acquisitionChannels": [
+        {
+            "channel": "Orgânico",
+            "customers": 12665,
+            "percentage": 28
+        },
+        {
+            "channel": "Paid Search",
+            "customers": 10856,
+            "percentage": 24
+        },
+        {
+            "channel": "Social Media",
+            "customers": 8142,
+            "percentage": 18
+        },
+        {
+            "channel": "Email",
+            "customers": 6785,
+            "percentage": 15
+        },
+        {
+            "channel": "Direto",
+            "customers": 4523,
+            "percentage": 10
+        },
+        {
+            "channel": "Referral",
+            "customers": 2262,
+            "percentage": 5
+        }
+    ],
+    "salesEvolution": [
+        {
+            "month": "Jan",
+            "revenue": 580000,
+            "customers": 3820
+        },
+        {
+            "month": "Fev",
+            "revenue": 620000,
+            "customers": 4150
+        },
+        {
+            "month": "Mar",
+            "revenue": 680000,
+            "customers": 4520
+        },
+        {
+            "month": "Abr",
+            "revenue": 720000,
+            "customers": 4780
+        },
+        {
+            "month": "Mai",
+            "revenue": 780000,
+            "customers": 5120
+        },
+        {
+            "month": "Jun",
+            "revenue": 850000,
+            "customers": 5480
+        },
+        {
+            "month": "Jul",
+            "revenue": 920000,
+            "customers": 5920
+        },
+        {
+            "month": "Ago",
+            "revenue": 880000,
+            "customers": 5680
+        },
+        {
+            "month": "Set",
+            "revenue": 950000,
+            "customers": 6150
+        },
+        {
+            "month": "Out",
+            "revenue": 1020000,
+            "customers": 6580
+        },
+        {
+            "month": "Nov",
+            "revenue": 1150000,
+            "customers": 7320
+        },
+        {
+            "month": "Dez",
+            "revenue": 1280000,
+            "customers": 8200
+        }
+    ],
+    "topCategories": [
+        {
+            "category": "Eletrônicos",
+            "revenue": 1850000,
+            "orders": 8520
+        },
+        {
+            "category": "Moda",
+            "revenue": 1420000,
+            "orders": 12350
+        },
+        {
+            "category": "Casa",
+            "revenue": 980000,
+            "orders": 6780
+        },
+        {
+            "category": "Esportes",
+            "revenue": 850000,
+            "orders": 5420
+        },
+        {
+            "category": "Livros",
+            "revenue": 720000,
+            "orders": 9850
+        },
+        {
+            "category": "Beleza",
+            "revenue": 680000,
+            "orders": 7120
+        },
+        {
+            "category": "Brinquedos",
+            "revenue": 520000,
+            "orders": 4280
+        },
+        {
+            "category": "Alimentos",
+            "revenue": 480000,
+            "orders": 8950
+        },
+        {
+            "category": "Pet",
+            "revenue": 420000,
+            "orders": 3650
+        },
+        {
+            "category": "Jardim",
+            "revenue": 380000,
+            "orders": 2890
+        }
+    ],
+    "geographicDistribution": [
+        {
+            "region": "Sudeste",
+            "customers": 20355,
+            "percentage": 45
+        },
+        {
+            "region": "Sul",
+            "customers": 9047,
+            "percentage": 20
+        },
+        {
+            "region": "Nordeste",
+            "customers": 7885,
+            "percentage": 17.4
+        },
+        {
+            "region": "Centro-Oeste",
+            "customers": 4523,
+            "percentage": 10
+        },
+        {
+            "region": "Norte",
+            "customers": 3424,
+            "percentage": 7.6
+        }
+    ],
+    "avgTicketBySegment": [
+        {
+            "segment": "Champions",
+            "avgTicket": 302
+        },
+        {
+            "segment": "Loyal",
+            "avgTicket": 245
+        },
+        {
+            "segment": "At Risk",
+            "avgTicket": 198
+        },
+        {
+            "segment": "Recent",
+            "avgTicket": 156
+        },
+        {
+            "segment": "Lost",
+            "avgTicket": 89
+        }
+    ],
+    "statistics": {
+        "mean": 1850,
+        "median": 1420,
+        "stdDev": 980,
+        "p25": 680,
+        "p50": 1420,
+        "p75": 2850,
+        "min": 45,
+        "max": 12500
+    }
+}

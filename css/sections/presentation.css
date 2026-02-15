@@ -1,0 +1,111 @@
+/* Presentation Section Styles */
+
+.section-presentation {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.hero {
+    text-align: center;
+    padding: var(--spacing-12) 0;
+    margin-bottom: var(--spacing-8);
+}
+
+.hero h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-4);
+    line-height: 1.1;
+}
+
+.hero .subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-10);
+}
+
+.insights-section {
+    margin-bottom: var(--spacing-10);
+}
+
+.insights-section h2 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-6);
+    text-align: center;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-6);
+}
+
+.guide-section {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-8);
+}
+
+.guide-section h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-6);
+}
+
+.guide-steps {
+    display: grid;
+    gap: var(--spacing-4);
+}
+
+.guide-step {
+    display: flex;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    background-color: var(--color-background);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: var(--font-weight-bold);
+}
+
+.step-content h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-2);
+}
+
+.step-content p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero .subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}

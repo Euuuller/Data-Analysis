@@ -1,0 +1,108 @@
+/* RFM Segmentation Section Styles */
+
+.section-rfm {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.rfm-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+}
+
+.rfm-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-8);
+}
+
+.segment-card {
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-border);
+    text-align: center;
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.segment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.segment-card.champions {
+    background-color: #d1fae5;
+    border-color: var(--color-success);
+}
+
+.segment-card.loyal {
+    background-color: #dbeafe;
+    border-color: var(--color-primary);
+}
+
+.segment-card.at-risk {
+    background-color: #fef3c7;
+    border-color: var(--color-warning);
+}
+
+.segment-card.lost {
+    background-color: #fee2e2;
+    border-color: var(--color-danger);
+}
+
+.segment-name {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-2);
+}
+
+.segment-count {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+}
+
+.segment-value {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-1);
+}
+
+.rfm-distribution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+}
+
+.distribution-chart {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-5);
+}
+
+.distribution-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-4);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .rfm-distribution-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rfm-matrix {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .rfm-matrix {
+        grid-template-columns: 1fr;
+    }
+}

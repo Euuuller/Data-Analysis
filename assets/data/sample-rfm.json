@@ -1,0 +1,114 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "Cliente A",
+            "recencyScore": 5,
+            "frequencyScore": 5,
+            "monetaryScore": 5,
+            "segment": "Champions",
+            "lastPurchaseDays": 5,
+            "totalPurchases": 28,
+            "totalRevenue": 8450,
+            "avgOrderValue": 302
+        },
+        {
+            "id": 2,
+            "name": "Cliente B",
+            "recencyScore": 4,
+            "frequencyScore": 4,
+            "monetaryScore": 4,
+            "segment": "Loyal",
+            "lastPurchaseDays": 15,
+            "totalPurchases": 18,
+            "totalRevenue": 5280,
+            "avgOrderValue": 293
+        }
+    ],
+    "segments": {
+        "champions": {
+            "count": 3620,
+            "avgLTV": 3250,
+            "avgRecency": 8,
+            "avgFrequency": 24,
+            "totalRevenue": 11765000
+        },
+        "loyal": {
+            "count": 5840,
+            "avgLTV": 2180,
+            "avgRecency": 22,
+            "avgFrequency": 16,
+            "totalRevenue": 12731200
+        },
+        "potentialLoyalist": {
+            "count": 4250,
+            "avgLTV": 1520,
+            "avgRecency": 18,
+            "avgFrequency": 8,
+            "totalRevenue": 6460000
+        },
+        "recent": {
+            "count": 3180,
+            "avgLTV": 890,
+            "avgRecency": 12,
+            "avgFrequency": 2,
+            "totalRevenue": 2830200
+        },
+        "promising": {
+            "count": 2950,
+            "avgLTV": 1340,
+            "avgRecency": 25,
+            "avgFrequency": 5,
+            "totalRevenue": 3953000
+        },
+        "needAttention": {
+            "count": 4120,
+            "avgLTV": 1680,
+            "avgRecency": 45,
+            "avgFrequency": 12,
+            "totalRevenue": 6921600
+        },
+        "aboutToSleep": {
+            "count": 3580,
+            "avgLTV": 980,
+            "avgRecency": 52,
+            "avgFrequency": 6,
+            "totalRevenue": 3508400
+        },
+        "atRisk": {
+            "count": 2340,
+            "avgLTV": 2450,
+            "avgRecency": 68,
+            "avgFrequency": 18,
+            "totalRevenue": 5733000
+        },
+        "cantLose": {
+            "count": 1850,
+            "avgLTV": 3890,
+            "avgRecency": 85,
+            "avgFrequency": 26,
+            "totalRevenue": 7196500
+        },
+        "hibernating": {
+            "count": 5120,
+            "avgLTV": 620,
+            "avgRecency": 95,
+            "avgFrequency": 4,
+            "totalRevenue": 3174400
+        },
+        "lost": {
+            "count": 8384,
+            "avgLTV": 450,
+            "avgRecency": 120,
+            "avgFrequency": 2,
+            "totalRevenue": 3772800
+        }
+    },
+    "summary": {
+        "totalCustomers": 45234,
+        "totalRevenue": 68046100,
+        "avgLTV": 1504,
+        "topSegment": "loyal",
+        "atRiskCustomers": 2340
+    }
+}

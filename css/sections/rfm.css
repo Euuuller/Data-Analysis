@@ -1,108 +1,339 @@
-/* RFM Segmentation Section Styles */
+/**
+ * RFM Segmentation Section Styles
+ */
 
 .section-rfm {
-    animation: fadeIn 0.4s ease-out;
+    padding: var(--spacing-6);
 }
 
-.rfm-overview {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-4);
-    margin-bottom: var(--spacing-8);
+.section-header {
+    margin-bottom: var(--spacing-6);
 }
 
-.rfm-matrix {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--spacing-3);
-    margin-bottom: var(--spacing-8);
-}
-
-.segment-card {
-    padding: var(--spacing-4);
-    border-radius: var(--radius-md);
-    border: 2px solid var(--color-border);
-    text-align: center;
-    transition: all var(--transition-base);
-    cursor: pointer;
-}
-
-.segment-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
-.segment-card.champions {
-    background-color: #d1fae5;
-    border-color: var(--color-success);
-}
-
-.segment-card.loyal {
-    background-color: #dbeafe;
-    border-color: var(--color-primary);
-}
-
-.segment-card.at-risk {
-    background-color: #fef3c7;
-    border-color: var(--color-warning);
-}
-
-.segment-card.lost {
-    background-color: #fee2e2;
-    border-color: var(--color-danger);
-}
-
-.segment-name {
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: var(--spacing-2);
-}
-
-.segment-count {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+.section-header h1 {
     color: var(--color-text-primary);
+    margin-bottom: var(--spacing-2);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
 }
 
-.segment-value {
-    font-size: var(--font-size-xs);
+.section-header p {
     color: var(--color-text-secondary);
-    margin-top: var(--spacing-1);
+    font-size: var(--font-size-base);
 }
 
-.rfm-distribution-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-6);
-    margin-bottom: var(--spacing-8);
+/* Methodology Section */
+.rfm-methodology {
+    background: var(--color-bg-secondary);
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+    border-radius: var(--radius-md);
 }
 
-.distribution-chart {
-    background-color: var(--color-background);
+.rfm-methodology h3 {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-3);
+}
+
+.rfm-methodology p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    font-size: var(--font-size-sm);
+}
+
+.rfm-methodology strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Treemap Section */
+.rfm-treemap-section {
+    margin-bottom: var(--spacing-6);
+}
+
+.rfm-treemap-section h3 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-4);
+}
+
+.treemap-container {
+    background: white;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     padding: var(--spacing-5);
+    min-height: 550px;
 }
 
-.distribution-title {
+.treemap-grid-custom {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 6px;
+    height: 100%;
+    min-height: 500px;
+}
+
+/* Size variants */
+.treemap-large {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.treemap-medium {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.treemap-small {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.treemap-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.treemap-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    pointer-events: none;
+}
+
+.treemap-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.treemap-content {
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.treemap-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-bottom: var(--spacing-2);
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+.treemap-large .treemap-label {
+    font-size: var(--font-size-base);
+}
+
+.treemap-value {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-1);
+    line-height: 1;
+}
+
+.treemap-large .treemap-value {
+    font-size: var(--font-size-4xl);
+}
+
+.treemap-medium .treemap-value {
+    font-size: var(--font-size-3xl);
+}
+
+.treemap-small .treemap-value {
+    font-size: var(--font-size-2xl);
+}
+
+.treemap-percentage {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.treemap-large .treemap-percentage {
     font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
+}
+
+/* Charts Grid */
+.rfm-charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: var(--spacing-6);
+}
+
+.chart-card {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-5);
+    box-shadow: var(--shadow-sm);
+}
+
+.chart-card-header {
     margin-bottom: var(--spacing-4);
+    padding-bottom: var(--spacing-3);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.chart-card-title {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin: 0;
+}
+
+.chart-container {
+    position: relative;
+    height: 500px;
+}
+
+/* Actions Table */
+.actions-table-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.actions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+}
+
+.actions-table thead {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg-secondary);
+    z-index: 10;
+}
+
+.actions-table th {
+    padding: var(--spacing-3);
+    text-align: left;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    border-bottom: 2px solid var(--color-border);
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.actions-table td {
+    padding: var(--spacing-3);
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+.actions-table tbody tr:hover {
+    background: var(--color-bg-secondary);
+}
+
+.segment-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: var(--spacing-2);
+}
+
+.text-center {
     text-align: center;
 }
 
+.strategy-text {
+    color: var(--color-text-secondary);
+    font-style: italic;
+    font-size: var(--font-size-sm);
+}
+
+/* Responsive */
 @media (max-width: 1024px) {
-    .rfm-distribution-grid {
+    .rfm-charts-grid {
         grid-template-columns: 1fr;
     }
 
-    .rfm-matrix {
+    .treemap-grid-custom {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .treemap-large {
+        grid-column: span 2;
+    }
+
+    .treemap-medium {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .treemap-grid-custom {
         grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+    }
+
+    .treemap-large,
+    .treemap-medium,
+    .treemap-small {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .treemap-label {
+        font-size: var(--font-size-xs);
+    }
+
+    .treemap-value {
+        font-size: var(--font-size-xl);
+    }
+
+    .treemap-percentage {
+        font-size: var(--font-size-sm);
     }
 }
 
 @media (max-width: 640px) {
-    .rfm-matrix {
-        grid-template-columns: 1fr;
+    .section-rfm {
+        padding: var(--spacing-4);
+    }
+
+    .treemap-container {
+        min-height: 400px;
+        padding: var(--spacing-3);
+    }
+
+    .treemap-grid-custom {
+        min-height: 350px;
+    }
+
+    .chart-container {
+        height: 400px;
+    }
+
+    .actions-table {
+        font-size: var(--font-size-xs);
+    }
+
+    .actions-table th,
+    .actions-table td {
+        padding: var(--spacing-2);
     }
 }

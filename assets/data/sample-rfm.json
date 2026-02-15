@@ -1,114 +1,127 @@
 {
-    "customers": [
+    "segments": [
         {
-            "id": 1,
-            "name": "Cliente A",
-            "recencyScore": 5,
-            "frequencyScore": 5,
-            "monetaryScore": 5,
-            "segment": "Champions",
-            "lastPurchaseDays": 5,
-            "totalPurchases": 28,
-            "totalRevenue": 8450,
-            "avgOrderValue": 302
+            "id": "campeoes",
+            "name": "Campeões",
+            "nameEn": "Champions",
+            "count": 30,
+            "percentage": 4,
+            "color": "#fbbf24",
+            "strategy": "Recompensar, buscar embaixadores",
+            "description": "Melhores clientes - compram frequentemente e recentemente"
         },
         {
-            "id": 2,
-            "name": "Cliente B",
-            "recencyScore": 4,
-            "frequencyScore": 4,
-            "monetaryScore": 4,
-            "segment": "Loyal",
-            "lastPurchaseDays": 15,
-            "totalPurchases": 18,
-            "totalRevenue": 5280,
-            "avgOrderValue": 293
+            "id": "clientes-fieis",
+            "name": "Clientes fiéis",
+            "nameEn": "Loyal Customers",
+            "count": 217,
+            "percentage": 27,
+            "color": "#3b82f6",
+            "strategy": "Upselling, programas VIP",
+            "description": "Clientes consistentes e valiosos"
+        },
+        {
+            "id": "fieis-em-potencial",
+            "name": "Fiéis em potencial",
+            "nameEn": "Potential Loyalists",
+            "count": 314,
+            "percentage": 40,
+            "color": "#06b6d4",
+            "strategy": "Aumentar frequência, ofertas",
+            "description": "Clientes com potencial de se tornarem fiéis"
+        },
+        {
+            "id": "novos-clientes",
+            "name": "Novos clientes",
+            "nameEn": "New Customers",
+            "count": 18,
+            "percentage": 2,
+            "color": "#10b981",
+            "strategy": "Onboarding, experiências",
+            "description": "Clientes recém-adquiridos"
+        },
+        {
+            "id": "promissores",
+            "name": "Promissores",
+            "nameEn": "Promising",
+            "count": 7,
+            "percentage": 1,
+            "color": "#34d399",
+            "strategy": "Criar hábito de compra",
+            "description": "Novos clientes com bom potencial"
+        },
+        {
+            "id": "precisam-atencao",
+            "name": "Clientes que precisam de atenção",
+            "nameEn": "Need Attention",
+            "count": 17,
+            "percentage": 2,
+            "color": "#fb923c",
+            "strategy": "Reengajamento imediato",
+            "description": "Clientes que estão perdendo interesse"
+        },
+        {
+            "id": "em-risco",
+            "name": "Clientes em Risco",
+            "nameEn": "At Risk",
+            "count": 61,
+            "percentage": 8,
+            "color": "#f97316",
+            "strategy": "Recuperação urgente",
+            "description": "Clientes valiosos que estão se afastando"
+        },
+        {
+            "id": "nao-posso-perder",
+            "name": "Clientes que não posso perder",
+            "nameEn": "Can't Lose Them",
+            "count": 4,
+            "percentage": 1,
+            "color": "#a855f7",
+            "strategy": "Win-back premium",
+            "description": "Clientes de alto valor em risco crítico"
+        },
+        {
+            "id": "hibernando",
+            "name": "Clientes hibernando",
+            "nameEn": "Hibernating",
+            "count": 14,
+            "percentage": 2,
+            "color": "#8b5cf6",
+            "strategy": "Reativação com desconto",
+            "description": "Clientes inativos há algum tempo"
+        },
+        {
+            "id": "quase-dormentes",
+            "name": "Clientes quase dormentes",
+            "nameEn": "About to Sleep",
+            "count": 28,
+            "percentage": 4,
+            "color": "#94a3b8",
+            "strategy": "Última tentativa de resgate",
+            "description": "Clientes prestes a se tornarem inativos"
+        },
+        {
+            "id": "perdidos",
+            "name": "Clientes perdidos",
+            "nameEn": "Lost",
+            "count": 83,
+            "percentage": 10,
+            "color": "#ef4444",
+            "strategy": "Campanha massiva",
+            "description": "Clientes que já não compram mais"
         }
     ],
-    "segments": {
-        "champions": {
-            "count": 3620,
-            "avgLTV": 3250,
-            "avgRecency": 8,
-            "avgFrequency": 24,
-            "totalRevenue": 11765000
-        },
-        "loyal": {
-            "count": 5840,
-            "avgLTV": 2180,
-            "avgRecency": 22,
-            "avgFrequency": 16,
-            "totalRevenue": 12731200
-        },
-        "potentialLoyalist": {
-            "count": 4250,
-            "avgLTV": 1520,
-            "avgRecency": 18,
-            "avgFrequency": 8,
-            "totalRevenue": 6460000
-        },
-        "recent": {
-            "count": 3180,
-            "avgLTV": 890,
-            "avgRecency": 12,
-            "avgFrequency": 2,
-            "totalRevenue": 2830200
-        },
-        "promising": {
-            "count": 2950,
-            "avgLTV": 1340,
-            "avgRecency": 25,
-            "avgFrequency": 5,
-            "totalRevenue": 3953000
-        },
-        "needAttention": {
-            "count": 4120,
-            "avgLTV": 1680,
-            "avgRecency": 45,
-            "avgFrequency": 12,
-            "totalRevenue": 6921600
-        },
-        "aboutToSleep": {
-            "count": 3580,
-            "avgLTV": 980,
-            "avgRecency": 52,
-            "avgFrequency": 6,
-            "totalRevenue": 3508400
-        },
-        "atRisk": {
-            "count": 2340,
-            "avgLTV": 2450,
-            "avgRecency": 68,
-            "avgFrequency": 18,
-            "totalRevenue": 5733000
-        },
-        "cantLose": {
-            "count": 1850,
-            "avgLTV": 3890,
-            "avgRecency": 85,
-            "avgFrequency": 26,
-            "totalRevenue": 7196500
-        },
-        "hibernating": {
-            "count": 5120,
-            "avgLTV": 620,
-            "avgRecency": 95,
-            "avgFrequency": 4,
-            "totalRevenue": 3174400
-        },
-        "lost": {
-            "count": 8384,
-            "avgLTV": 450,
-            "avgRecency": 120,
-            "avgFrequency": 2,
-            "totalRevenue": 3772800
-        }
-    },
     "summary": {
-        "totalCustomers": 45234,
-        "totalRevenue": 68046100,
-        "avgLTV": 1504,
-        "topSegment": "loyal",
-        "atRiskCustomers": 2340
+        "totalCustomers": 793,
+        "totalSegments": 11,
+        "topSegment": "Fiéis em potencial",
+        "topSegmentPercentage": 40,
+        "atRiskTotal": 165,
+        "atRiskPercentage": 21
+    },
+    "methodology": {
+        "recency": "R (quanto tempo): Tempo desde a última compra",
+        "frequency": "F (quantas vezes): Frequência de compras",
+        "monetary": "M (quanto gasta): Valor monetário gasto"
     }
 }
